@@ -30,10 +30,17 @@ def num_within(i, a, b) :
 # Write a Python function called pascal() that prints out the first n rows of Pascal's triangle.
 # The function accepts the number n, the number of rows to print
 # Note : Pascal's triangle is an arithmetic and geometric figure first imagined by Blaise Pascal. Each number is the two numbers above it added together.
-def pascal():
-    pass
+def pascal(row):
+    for i in range(row):
+        print(" "*(row-i), end=' ')
+        print(" ".join(str(11**i)))
 
 
-print (num_within(3, 2, 4))
-print (num_within(3,1,1))
-print (num_within(10,2,5))
+
+
+
+
+# print (num_within(3, 2, 4))
+# print (num_within(3,1,1))
+# print (num_within(10,2,5))
+print(pascal(6))
